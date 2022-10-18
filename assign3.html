@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var word="SADAM";
+        var word1= word.split('');
+        var word2= [];
+        console.log(`The word which is checked is ${word}`)
+        for(let a=word1.length-1;a>=0;a--){
+            word2.push(word1[a]);
+        }
+        let w1=word1.join();
+        let w2=word2.join();
+        if(w1===w2){
+            console.log("It is palindrome");
+        }else{
+            console.log("It is not a palindrome");
+        }
+    </script>
+</body>
+</html>
